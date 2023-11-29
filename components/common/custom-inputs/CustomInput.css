@@ -1,0 +1,67 @@
+label + .custom-input {
+  @apply mt-8;
+}
+.custom-form-label {
+  @apply !text-white
+  text-xl
+  font-normal;
+}
+.custom-input {
+  @apply border
+  border-cowboy
+  text-base
+  h-[65px]
+  mb-4
+  text-white
+  rounded-[5px]
+  placeholder:text-boulder;
+
+  & .MuiInputBase-root {
+    @apply bg-transparent !rounded-md;
+  }
+
+  & .date-picker-button {
+    & button {
+      @apply !m-0;
+    }
+  }
+}
+.custom-input input {
+  @apply p-5
+  rounded-[5px];
+}
+
+.custom-input > .Mui-focused {
+  @apply !rounded-md;
+}
+
+.custom-input .MuiInputLabel-root.Mui-focused {
+  @apply !text-black;
+}
+
+.custom-input .MuiInputBase-root::after,
+.custom-input .MuiInputBase-root:hover ::after,
+.custom-input .MuiInputBase-root::before,
+.custom-input .MuiInputBase-root:hover ::before {
+  @apply !border-none;
+}
+
+.custom-input .MuiOutlinedInput-notchedOutline {
+  @apply border-none;
+}
+.date-picker-popper {
+  & .MuiPickersDay-root.Mui-selected {
+    @apply !bg-black;
+  }
+  & .MuiPickersDay-root:hover {
+    @apply bg-black;
+  }
+}
+
+/*
+
+@media (max-width: 768px) {
+  .custom-input {
+    @apply w-full;
+  }
+} */

@@ -1,0 +1,44 @@
+.custom-icon-button {
+  @apply !h-10 
+  !w-10
+  !flex 
+  !items-center 
+  !justify-center
+  transition;
+
+  &:hover {
+    @apply transition;
+  }
+}
+.MuiLoadingButton-root {
+  @apply !text-sm
+  !rounded-full
+  bg-buttonGrad
+  text-white
+  !px-8
+  /* !py-4 */
+  !capitalize
+  !border-4
+  !h-12
+  !w-48
+  !duration-300
+  !ease-[ease]
+  font-aeonik
+  font-medium
+  shadow-buttonShadow
+  max-md:!shadow-none;
+}
+.MuiLoadingButton-loading,
+.MuiLoadingButton-root:disabled {
+  @apply grayscale
+  !pointer-events-none;
+}
+.MuiLoadingButton-loading {
+  @apply !text-transparent;
+}
+
+/* .MuiLoadingButton-root:hover {
+  @apply !text-white 
+  !border-4 
+  !border-solid;
+} */

@@ -1,0 +1,45 @@
+.custom-input {
+  @apply rounded-md bg-white text-base;
+}
+.custom-input .MuiSelect-select {
+  @apply !rounded-md;
+}
+
+.custom-input > .Mui-focused {
+  @apply !rounded-md;
+}
+
+.custom-input .MuiInputLabel-root.Mui-focused {
+  @apply !text-[#eb6e1e];
+}
+
+.custom-input input {
+  @apply rounded-md;
+}
+
+.custom-input .MuiInputBase-root {
+  @apply bg-transparent;
+}
+
+.custom-input .MuiInputBase-root:hover {
+  @apply rounded-md;
+}
+
+.custom-input .MuiInputBase-root::after,
+.custom-input .MuiInputBase-root:hover ::after,
+.custom-input .MuiInputBase-root::before,
+.custom-input .MuiInputBase-root:hover ::before {
+  @apply !border-none;
+}
+
+.custom-input .MuiOutlinedInput-notchedOutline {
+  @apply border-none;
+}
+
+/*
+
+@media (max-width: 768px) {
+  .custom-input {
+    @apply w-full;
+  }
+} */

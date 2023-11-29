@@ -1,0 +1,148 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 100;
+  src: url("../public/fonts/Aeonik-Air.otf");
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 200;
+  src: url("../public/fonts/Aeonik-Thin.otf");
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 300;
+  src: url("../public/fonts/Aeonik-Light.otf");
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 400;
+  src: url("../public/fonts/Aeonik-Regular.otf");
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 500;
+  src: url("../public/fonts/Aeonik-Medium.otf");
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 700;
+  src: url("../public/fonts/Aeonik-Bold.otf");
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 900;
+  src: url("../public/fonts/Aeonik-Black.otf");
+}
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 100;
+  src: url("../public/fonts/Aeonik-AirItalic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 200;
+  src: url("../public/fonts/Aeonik-ThinItalic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 300;
+  src: url("../public/fonts/Aeonik-LightItalic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 400;
+  src: url("../public/fonts/Aeonik-RegularItalic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 500;
+  src: url("../public/fonts/Aeonik-MediumItalic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 700;
+  src: url("../public/fonts/Aeonik-BoldItalic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  font-weight: 900;
+  src: url("../public/fonts/Aeonik-BlackItalic.otf");
+  font-style: italic;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  font-family: "Aeonik";
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ab47ff;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff1ac4;
+}
+
+.appbar {
+  @apply bg-[#1A1A1A] z-10 transition-all duration-[225ms] ease-[cubic-bezier(0.4,0,0.6,1)];
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+.bg-theme {
+  background: var(
+    --BG-Grad,
+    linear-gradient(133deg, #380029 0.57%, #0f0f0f 52.25%, #1e0038 100%)
+  );
+}
+
+.left-section-theme {
+  background: linear-gradient(
+    180deg,
+    rgba(171, 71, 255, 0.9) 0%,
+    rgba(255, 26, 196, 0.9) 100%
+  );
+}
+.content-theme {
+  background: var(
+    --BG-Grad,
+    linear-gradient(133deg, #380029 0.57%, #0f0f0f 52.25%, #1e0038 100%)
+  );
+}

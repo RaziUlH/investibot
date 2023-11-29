@@ -1,0 +1,7 @@
+.custom-divider {
+  @apply text-boulder
+    text-xl
+    font-medium
+    before:border-cowboy
+    after:border-cowboy;
+}
